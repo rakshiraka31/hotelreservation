@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+    <h1  style="color: rgb(20, 235, 31);"> Hotel RADISSION</h1>
+    <h5> Lazimpat , Kathmandu</h5>
+     </header>
+    <div>
+        <h3 style="border: 2px;"><strong>RESERVATION FORM</strong> </h3>
+        
+    <form name="form" method="POST" action="create.php">
+        <p1  text-align="right";>Date of Registration:</p1>
+                            <br>
+                            <input type="date" id="daate" name="daate">
+                            <br>
+                            <br>
+        
+        <br><br>
+        <div>
+            <label for="fname">
+            First Name:</label>
+             <input type="text" id="fname" placeholder="Enter First Name" name="fname">
+            <label for="lname">Last Name:</label>
+             <input type="text" id="lname" placeholder="Enter Last Name"  name="lname">
+        
+        </div>
+        <br><br>
+        <div>
+            <label for="gender">
+            Gender: </label> <br>
+
+            <input type="radio" id="m" name="gender" value="male"> Male <br>
+            <input type="radio" id="f" name="gender" value="female"> Female<br>
+           
+        </div>
+        <br><br>
+        <div>
+            <label for="dayss">
+            Days stay In the Hotel:  </label>
+            <input type="number" id="dayss"  name="dayss">
+           
+        </div>
+        <br><br>
+        <div>
+             Choose the Room type:<br>
+        
+                <input type="radio" id="a" name="type" value="attach">Aattached Bathroom<br>
+                <input type="radio" id="s" name="type" value="single">Single bed<br>
+                <input type="radio" id="d"  name="type" value="double">Double Bed<br>
+                <input type="radio" id="Fb"  name="type" value="family">Family_BedRoom
+            
+             
+        </div>
+        <br><br>
+        <div>
+        <label for="email">
+        Email:</label> <input type="text" name="email">
+                            <br><br>
+                        </div>
+        <div>
+            <label for="contact">
+            Contact Number:  </label>
+            <input type="number" id="contact"  name="contact">
+           
+        </div>
+        <br><br>
+        <div>
+            <label for="address">
+             Address: </label>
+             <input type="text" id="address"  name="address">
+            
+        </div>
+        <br><br>
+        <div>
+             Hotel Check IN Time:<br>
+            
+                <input type="radio" name="checked"  id="morning" value="morning">8:00am<br><br>
+                <input type="radio" name="checked"  id="afternoon" value="afternoon">12:00pm<br><br>
+                <input type="radio" name="checked"  id="day" value="day">3:00pm<br><br>
+                <input type="radio" name="checked"  id="evening" value="evening">7:00pm<br><br>
+            
+        </div>
+        <br>
+        <div>
+            <label for="room">
+        
+            Enter the Room Number:</label>
+             <input type="text" id="room"  name="room">
+        </div>
+        <br><br>
+        <div>
+            <label for="idcard">Submit Your National ID:</label> <input type="file" id="idcard"  name="idcard">
+        </div>
+        <br><br>
+        <div>
+            <label for="payment">  Payment Method: Online</label><br>
+                
+                
+                    <input type="radio" name="payment"  id="esewa" value="esewa"> Esewa <br>
+                    <input type="radio" name="payment" id="bank" value="bank"> Bank Transfer <br>
+                    <input type="radio" name="payment" id="connect" value="connectips"> ConnectIPS<br>
+                    <input type="radio" name="payment" id="khalti" value="khalti"> Khalti<br>
+                
+                
+            </select>
+            
+        </div>
+        <br><br>
+        <input type="submit" value="Submit" name="Submit">
+    </form>   
+    </div>
+</body>
+</html>
